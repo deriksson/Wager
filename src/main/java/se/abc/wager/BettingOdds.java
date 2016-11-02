@@ -35,6 +35,13 @@ final class BettingOdds {
         return Arrays.stream(implied).map(d -> d / sum);
     }
 
+    /**
+     * Returns a function for parsing odds, based on the notation. Fractional and decimal odds are handled.
+     *
+     * @param odds Sample string using the preferred notation.
+     * @return A function for parsing individual bets.
+     * @throws IllegalArgumentException If the notation does not represent fractional or decimal odds.
+     */
     static Function<String, Double> converter(String odds) throws IllegalArgumentException {
         if (odds.contains("/"))
             return s -> implied(new Fraction(s)); /* Fractional odds. */
