@@ -1,3 +1,8 @@
+#Would you and your partner like to come to Kai and Abha's wedding on Sunday 27 August 2017 in Cambridge?
+
+#Love,
+#Graham
+
 # Wager: Convert Bets to Probabilities
 
 This command line Java application calculates the probabilities implied 
